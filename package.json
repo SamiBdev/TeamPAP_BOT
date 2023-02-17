@@ -1,0 +1,27 @@
+{
+  "name": "teampap_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Todakouma/TeamPAP_BOT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Todakouma/TeamPAP_BOT/issues"
+  },
+  "homepage": "https://github.com/Todakouma/TeamPAP_BOT#readme",
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
