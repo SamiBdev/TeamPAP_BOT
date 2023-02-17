@@ -16,9 +16,9 @@ declare module "discord.js" {
 }
 
 export interface BotEvent {
-    name: string,
-    once?: boolean | false,
-    execute: (...args) => void
+    name: string, // The name of the event we want to listen to
+    once?: boolean | false, // Whether the event should only be executed once or not
+    execute: (...args) => void // The code to execute when the event is triggered
 }
 
 export interface SlashCommand {
