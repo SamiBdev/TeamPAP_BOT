@@ -15,16 +15,19 @@ declare module "discord.js" {
     }
 }
 
+// Interface for defining a bot event
 export interface BotEvent {
-    name: string,
-    once?: boolean | false,
-    execute: (...args) => void
+    name: string, // The name of the event we want to listen to
+    once?: boolean | false, // Whether the event should only be executed once or not
+    execute: (...args) => void // The code to execute when the event is triggered
 }
 
+
+// Interface for defining a slash command
 export interface SlashCommand {
-    name: string,
-    data: SlashCommandBuilder | any,
-    async execute: (interaction: CommandInteraction) => Promise<void>
+    name: string, // The name of the command
+    data: SlashCommandBuilder | any, // The data for creating the command
+    async execute: (interaction: CommandInteraction) => Promise<void> // The code to execute when the command is called
 }
 
 export {}
